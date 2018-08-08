@@ -1,0 +1,1 @@
+webpackJsonp([80],{1087:function(s,a,c){s.exports=c.p+"static/media/page.7ac54b50.scss"}});

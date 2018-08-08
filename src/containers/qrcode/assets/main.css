@@ -1,0 +1,107 @@
+.phone_lock_root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000; }
+  .phone_lock_root .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: #fff; }
+    .phone_lock_root .bg img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .phone_lock_root .modal {
+    position: absolute;
+    left: 50%;
+    margin-left: -2.3rem;
+    top: 3.8rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .phone_lock_root .modal p {
+      color: #535353;
+      line-height: 2; }
+    .phone_lock_root .modal .b {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.2rem;
+      width: 5.4rem;
+      border-radius: 0.1rem; }
+    .phone_lock_root .modal .sureBtn {
+      width: 1.8rem;
+      height: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.4rem auto 0;
+      background: #fcc609;
+      color: #313131;
+      font-weight: bold;
+      font-size: 0.32rem;
+      letter-spacing: 0.05rem;
+      border-radius: 0.1rem; }
+    .phone_lock_root .modal .sureBtn {
+      width: 1.8rem;
+      height: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.4rem auto 0;
+      background: #fcc609;
+      color: #313131;
+      font-weight: bold;
+      font-size: 0.28rem;
+      letter-spacing: 0.05rem;
+      border-radius: 0.1rem; }
+    .phone_lock_root .modal .makeCard {
+      position: fixed;
+      top: 10.2rem;
+      left: 50%;
+      margin-left: -1.4rem;
+      width: 2.8rem;
+      height: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fcc609;
+      color: #333;
+      font-weight: bold;
+      font-size: 0.28rem;
+      letter-spacing: 0.05rem;
+      border-radius: 0.1rem; }
+    .phone_lock_root .modal .form_input {
+      padding-left: 0.23rem;
+      border-radius: 0.1rem;
+      width: 5.4rem;
+      height: 0.8rem;
+      background: #eeeeee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .phone_lock_root .modal .form_input input {
+        height: 0.8rem;
+        width: 100%;
+        background: transparent;
+        border: none; }
+      .phone_lock_root .modal .form_input.code {
+        width: 3.3rem; }
+    .phone_lock_root .modal .sure {
+      width: 1.8rem;
+      height: 0.8rem;
+      background: #00b7ee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      border-radius: 0.1rem; }
+      .phone_lock_root .modal .sure.active {
+        background: #eeeeee;
+        color: #313131; }

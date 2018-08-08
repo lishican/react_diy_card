@@ -1,0 +1,26 @@
+.navbar_com_root {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1rem;
+  background: #fff;
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 0.4rem 0.02rem rgba(0, 0, 0, 0.1); }
+  .navbar_com_root .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .navbar_com_root .item.active span {
+      color: #ff595c; }
+    .navbar_com_root .item img {
+      width: 0.34rem;
+      margin-bottom: 0.05rem; }
+    .navbar_com_root .item span {
+      font-size: 0.2rem;
+      color: #959595; }

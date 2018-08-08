@@ -1,0 +1,64 @@
+:global .appContainer {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  :global .appContainer .space-1 {
+    height: 1rem; }
+  :global .appContainer .mcontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #f4f5f6; }
+  :global .appContainer .con {
+    transition: all 0.3s; }
+    :global .appContainer .con.bar {
+      transform: translate3d(3rem, 0, 0); }
+  :global .appContainer .content {
+    transition: all 0.3s; }
+    :global .appContainer .content.active {
+      transform: translateX(3rem); }
+  :global .appContainer .fade-enter {
+    opacity: 0.01;
+    background: #ff0000; }
+  :global .appContainer .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1500ms ease-in;
+    background: #000000; }
+  :global .appContainer .fade-leave {
+    opacity: 1; }
+  :global .appContainer .fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 1300ms ease-in; }
+  :global .appContainer .top_title {
+    width: 7rem;
+    color: #2e79ed;
+    font-weight: normal;
+    font-size: 0.28rem;
+    padding: 0 0 0.2rem;
+    margin: 0 auto; }
+  :global .appContainer .tooltipTheme {
+    max-width: 4rem; }
+  :global .appContainer .tooltipimg {
+    display: inline-block;
+    width: 0.162rem !important;
+    margin-left: 0.2rem; }
+
+a, img, button, input, textarea {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+#root {
+  width: 100%;
+  height: 100%;
+  background: #ffffff; }
+
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; }

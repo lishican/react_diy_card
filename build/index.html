@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="theme-color" content="#1065ea">
+  <link rel="manifest" href="http://qn.kiis.cn/cardv16/manifest.json">
+  <link rel="shortcut icon" href="http://qn.kiis.cn/cardv16/favicon.ico">
+  <title>电子贺卡</title>
+  <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <script id="fiboDataSDK" type="text/javascript" src="http://sdk.fibodata.com/data/datasdk.min.js?pfid=fiboUser&appid=KT9FXe17"></script>
+  <script>"addEventListener" in document && document.addEventListener("DOMContentLoaded", function () { FastClick.attach(document.body) }, !1), window.wx = wx, window.dataSDK = dataSDK</script>
+  <link href="http://qn.kiis.cn/cardv16/static/css/main.62594dcf.css" rel="stylesheet">
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <div id="modal_root" style="position: relative;
+    ">
+  </div>
+  <audio src="" preload="true" id="musicObj" loop></audio>
+  <input type="hidden" id="openid" value="<%= userinfo.openid %>">
+  <input type="hidden" id="headimg" value="<%= userinfo.headimgurl %>">
+  <input type="hidden" id="nickname" value="<%= userinfo.nickname %>">
+  <!-- <script id="fiboDataSDK" type="text/javascript" src="http://sdk.fibodata.com/data/datasdk.min.js?pfid=fiboUser&appid=KT9FXe17"> </script>
+  <script src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script> -->
+  <!-- <script src='http://my.stackh.cn/awifi/vconsole.min.js'></script> -->
+
+  <script>
+    window.wx = wx
+    window.dataSDK = dataSDK
+    // var vConsole = new VConsole();
+
+  </script>
+  <script>
+    wx.config({
+      // debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+      appId: '<%= jsapi.appId %>', // 必填，公众号的唯一标识
+      timestamp: '<%= jsapi.timestamp %>', // 必填，生成签名的时间戳
+      nonceStr: '<%= jsapi.nonceStr %>', // 必填，生成签名的随机串
+      signature: '<%= jsapi.signature %>',// 必填，签名，见附录1
+      jsApiList: [
+        "onMenuShareTimeline",
+        "onMenuShareAppMessage"
+      ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });
+  </script>
+  <script type="text/javascript" src="http://qn.kiis.cn/cardv16/static/js/main.c61947de.js"></script>
+</body>
+
+</html>

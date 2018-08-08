@@ -1,0 +1,21 @@
+.cate_com_root{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: .22rem solid #f8f8f8;
+  .item{
+    padding: 0.34rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    span{
+      font-size: 0.2rem;
+    }
+    img{
+      margin-bottom: 0.1rem;
+      width: 0.8rem;
+    }
+  }
+}

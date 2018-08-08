@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="theme-color" content="#1065ea">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <title>光彩年华电子贺卡</title>
+  <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script>
+  <script id="fiboDataSDK" type="text/javascript" src="http://sdk.fibodata.com/data/datasdk.min.js?pfid=fiboUser&appid=KT9FXe17"> </script>
+  
+  <script>
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+    window.wx = wx;
+    window.dataSDK = dataSDK
+  </script>
+</head>
+<body>
+
+  <div id="root">
+  </div>
+  <div id="modal_root" style="position: relative;
+ ">
+  </div>
+  <input type="hidden" id='openid' value="oJp1P0dO0MR69qM-dgSt26sevrU_c">
+  <input type="hidden" id='headimg' value="http://120.76.45.115:9029/MiService/upload/card/cardAct1514882066939.png">
+  <input type="hidden" id='nickname' value="测试用户">
+
+  <audio src="" preload="true" id="musicObj" loop></audio>
+
+
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <script> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <!-- <script src="%PUBLIC_URL%/swiper.animate1.0.2.min.js"></script> -->
+
+
+  <!-- <script src="%PUBLIC_URL%/vconsole.min.js"></script>  -->
+  <script>
+
+    // new VConsole()
+  </script>
+
+
+
+</body>
+
+</html>

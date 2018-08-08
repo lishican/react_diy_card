@@ -1,0 +1,21 @@
+.home_page_root{
+ -webkit-overflow-scrolling: touch;
+  .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      overflow: visible;
+      padding: .2rem 0;
+    .item{
+      width: 30%;
+      margin-top: 0.2rem;
+      margin-left: 2.5%;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 .2rem rgba(0, 0, 0, .1);
+    }
+  }
+}

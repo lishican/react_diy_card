@@ -1,0 +1,32 @@
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div id="modal_root" style="position: relative;
+  ">
+</div>
+<audio src="" preload="true" id="musicObj" loop></audio>
+<input type="hidden" id="openid" value="<%= userinfo.openid %>">
+<input type="hidden" id="headimg" value="<%= userinfo.headimgurl %>">
+<input type="hidden" id="nickname" value="<%= userinfo.nickname %>">
+<!-- <script id="fiboDataSDK" type="text/javascript" src="http://sdk.fibodata.com/data/datasdk.min.js?pfid=fiboUser&appid=KT9FXe17"> </script>
+<script src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script> -->
+<!-- <script src='http://my.stackh.cn/awifi/vconsole.min.js'></script> -->
+
+<script>
+  window.wx = wx
+  window.dataSDK = dataSDK
+  // var vConsole = new VConsole();
+
+</script>
+<script>
+  wx.config({
+    // debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    appId: '<%= jsapi.appId %>', // 必填，公众号的唯一标识
+    timestamp: '<%= jsapi.timestamp %>', // 必填，生成签名的时间戳
+    nonceStr: '<%= jsapi.nonceStr %>', // 必填，生成签名的随机串
+    signature: '<%= jsapi.signature %>',// 必填，签名，见附录1
+    jsApiList: [
+      "onMenuShareTimeline",
+      "onMenuShareAppMessage"
+    ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+  });
+</script>

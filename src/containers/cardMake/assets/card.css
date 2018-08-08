@@ -1,0 +1,547 @@
+.card_page_root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232e3a;
+  -webkit-overflow-scrolling: touch; }
+
+.loadPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232e3a;
+  z-index: 999999;
+  color: #fff;
+  font-size: 0.24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  z-index: 1000; }
+  .main.pc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    width: 256px;
+    height: 496px;
+    transition: all 0.3s; }
+  .main .swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .main .swiper-container .swiper-slide {
+      width: 100%;
+      height: 100%; }
+  .main.active {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    transform: scale(0.8); }
+  .main .go_home_tip {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1999;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .main .go_home_tip .btn {
+      font-weight: bold;
+      height: 0.8rem;
+      background: #ffd305;
+      border-radius: 0.14rem;
+      box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.32rem;
+      color: #333;
+      padding: 0 0.2rem; }
+    .main .go_home_tip .jb {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff; }
+
+.mange {
+  position: fixed;
+  top: 84%;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  color: #ffff00;
+  text-align: center; }
+  .mange .pagedo {
+    display: flex;
+    justify-content: space-around; }
+    .mange .pagedo b {
+      color: #7d7d7d; }
+  .mange .btnaa {
+    padding-top: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center; }
+  .mange .save {
+    margin: 0 .4rem;
+    font-weight: bold;
+    width: 1.6rem;
+    height: 0.8rem;
+    background: #ffd305;
+    border-radius: 0.14rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.32rem;
+    color: #333; }
+
+.backmake {
+  position: fixed;
+  bottom: 0.2rem;
+  left: 0.2rem;
+  z-index: 100;
+  color: #fff;
+  z-index: 1000;
+  width: 1.4rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.32rem; }
+
+.preview_b {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.28rem;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0  30px; }
+  .preview_b.pc {
+    display: none; }
+  .preview_b .eidt {
+    width: 1.6rem;
+    height: 0.8rem;
+    background: #ffd305;
+    border-radius: 0.14rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.32rem; }
+  .preview_b .preview {
+    width: 1.6rem;
+    height: 0.8rem;
+    background: #ffd305;
+    border-radius: 0.14rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.32rem; }
+  .preview_b .share {
+    display: flex;
+    align-items: center;
+    font-size: 0.34rem;
+    color: #fff; }
+    .preview_b .share img {
+      width: 0.23rem;
+      margin-right: 0.12rem; }
+  .preview_b .back {
+    display: flex;
+    align-items: center;
+    font-size: 0.34rem;
+    color: #fff; }
+    .preview_b .back img {
+      width: 0.23rem;
+      margin-right: 0.12rem; }
+
+.pcbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; }
+  .pcbg .qrcode {
+    width: 200px;
+    height: 200px; }
+
+.arrow .left {
+  position: fixed;
+  left: 0.1rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7d7d7d; }
+  .arrow .left img {
+    display: block;
+    height: 70%;
+    position: relative;
+    left: -0.05rem; }
+
+.arrow .right {
+  position: fixed;
+  right: 0.1rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7d7d7d; }
+  .arrow .right img {
+    display: block;
+    height: 70%;
+    left: -0.05rem; }
+
+.backk {
+  position: fixed;
+  bottom: 0.6rem;
+  left: 20%;
+  z-index: 1000;
+  transform: translate(-50%, 0);
+  border: 1px solid #dbdbdb;
+  height: 0.8rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  background: #fff; }
+
+.edit {
+  position: relative;
+  height: auto;
+  overflow: hidden; }
+  .edit.editimg {
+    height: 100%; }
+  .edit img.wh {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 100%; }
+  .edit img.hw {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    height: 100%; }
+  .edit input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    opacity: 0; }
+  .edit .eidt_btn {
+    animation-duration: 4s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    z-index: 9999;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0000ff; }
+    .edit .eidt_btn.img {
+      z-index: 98; }
+
+.text_eidt_root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.8); }
+  .text_eidt_root .modal {
+    animation-duration: 0.2s;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    margin-left: -3rem;
+    width: 6rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: 0.1rem; }
+    .text_eidt_root .modal textarea {
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.3rem 0.3rem 0 0;
+      padding: 0.2rem;
+      border: none; }
+    .text_eidt_root .modal .tip {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: .8rem;
+      background: #f8f8f8;
+      line-height: 1.8;
+      text-align: left;
+      padding-left: 0.2rem;
+      color: #ffd305;
+      font-size: 0.24rem; }
+    .text_eidt_root .modal .b_btn_group {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 0.8rem;
+      border-top: 1px solid #dbdbdb; }
+      .text_eidt_root .modal .b_btn_group .btn {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffd305;
+        color: #313131; }
+        .text_eidt_root .modal .b_btn_group .btn:first-of-type {
+          background: #b5b5b5;
+          color: #fff;
+          border-right: 1px solid #dbdbdb; }
+  .text_eidt_root .pointlist {
+    margin-left: 1.4rem;
+    margin-bottom: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 2; }
+    .text_eidt_root .pointlist .point {
+      display: inline-block;
+      width: 0.2rem;
+      height: 0.2rem;
+      border-radius: 50%;
+      margin-right: 0.2rem;
+      background: transparent; }
+    .text_eidt_root .pointlist.active {
+      color: #ffd305; }
+      .text_eidt_root .pointlist.active .point {
+        background: #ffd305; }
+
+.music_eidt_root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.8); }
+  .music_eidt_root .modal {
+    animation-duration: 0.2s;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    margin-left: -3rem;
+    width: 6rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    overflow-y: auto; }
+    .music_eidt_root .modal h3 {
+      margin-top: 0.2rem;
+      text-align: center;
+      line-height: 3; }
+    .music_eidt_root .modal textarea {
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.3rem 0.3rem 0 0;
+      padding: 0.2rem;
+      border: none; }
+    .music_eidt_root .modal .content {
+      display: block;
+      height: 4rem;
+      overflow: auto; }
+    .music_eidt_root .modal .b_btn_group {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 0.8rem;
+      border-top: 1px solid #dbdbdb; }
+      .music_eidt_root .modal .b_btn_group .btn {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffd305;
+        color: #313131; }
+        .music_eidt_root .modal .b_btn_group .btn:first-of-type {
+          background: #b5b5b5;
+          color: #fff;
+          border-right: 1px solid #dbdbdb; }
+  .music_eidt_root .pointlist {
+    margin-bottom: 0.1rem;
+    padding-left: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1rem;
+    border-bottom: 1px solid #dbdbdb; }
+    .music_eidt_root .pointlist .point {
+      display: inline-block;
+      width: 0.3rem;
+      height: 0.3rem;
+      border-radius: 50%;
+      margin-right: 0.2rem;
+      background: transparent; }
+    .music_eidt_root .pointlist .rank {
+      font-weight: bold;
+      font-size: 0.34rem; }
+    .music_eidt_root .pointlist img {
+      display: block;
+      width: 0.5rem;
+      margin: 0 .2rem; }
+    .music_eidt_root .pointlist.active {
+      color: #ffd305; }
+      .music_eidt_root .pointlist.active .point {
+        background: #ffd305; }
+
+.share_page_modal_root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  animation-duration: 0.2s;
+  color: #333; }
+  .share_page_modal_root .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); }
+  .share_page_modal_root .tip {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 80%;
+    z-index: 1000; }
+    .share_page_modal_root .tip img {
+      display: block;
+      width: 100%; }
+  .share_page_modal_root .modal {
+    position: absolute;
+    z-index: 10000;
+    margin-left: 0.35rem;
+    top: .4rem;
+    background: #fff;
+    width: 6.8rem;
+    animation-duration: 0.2s;
+    border-radius: .1rem;
+    overflow: hidden; }
+  .share_page_modal_root .lal {
+    height: 0.6rem;
+    padding-left: 0.3rem; }
+    .share_page_modal_root .lal label {
+      margin-right: 0.4rem; }
+    .share_page_modal_root .lal input {
+      margin-right: 0.2rem; }
+  .share_page_modal_root .btn {
+    margin-top: 0.3rem;
+    height: 0.8rem; }
+    .share_page_modal_root .btn div:first-of-type {
+      background: #bfbfbf;
+      color: #fff; }
+    .share_page_modal_root .btn div:last-of-type {
+      background: #ffd305;
+      color: #313131; }
+  .share_page_modal_root .phoneInput {
+    padding: 0.1rem 0.2rem;
+    display: block;
+    width: 90%;
+    height: 1.4rem;
+    margin: .0 auto 0;
+    border-radius: 0.06rem;
+    border: 1px solid #dbdbdb;
+    font-size: 0.28rem;
+    color: #333; }
+  .share_page_modal_root .con {
+    padding: 0 0.26rem 0 0.26rem; }
+    .share_page_modal_root .con .item {
+      padding: 0.1rem;
+      margin-bottom: 0.3rem;
+      position: relative; }
+      .share_page_modal_root .con .item img {
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 0.1rem; }
+      .share_page_modal_root .con .item p {
+        margin-bottom: 0.2rem;
+        color: #7d7d7d; }
+      .share_page_modal_root .con .item input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: transparent; }
+      .share_page_modal_root .con .item textarea {
+        padding: 0.2rem;
+        width: 99%;
+        height: 1.6rem;
+        flex: 1;
+        overflow: visible;
+        border-radius: 0.06rem;
+        border: 1px solid #dbdbdb;
+        font-size: 0.28rem;
+        color: #333; }
+  .share_page_modal_root .title {
+    height: 0.8rem;
+    font-size: 0.34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    border-bottom: 1px solid #dbdbdb; }
+  .share_page_modal_root input[type="radio"] {
+    appearance: radio; }

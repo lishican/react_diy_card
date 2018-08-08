@@ -1,0 +1,156 @@
+.mycard_page_root {
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  background: #f8f8f8; }
+  .mycard_page_root .nav_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 0.84rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+    .mycard_page_root .nav_top .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      height: 0.84rem;
+      font-size: 0.32rem;
+      position: relative; }
+      .mycard_page_root .nav_top .item i {
+        position: relative;
+        top: -0.1rem;
+        left: 0.05rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        color: #fff;
+        background: #fd364d;
+        font-size: 0.2rem;
+        padding-top: 0.04rem;
+        line-height: 1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        transition: all .3s; }
+      .mycard_page_root .nav_top .item:after {
+        position: absolute;
+        content: '';
+        display: block;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        z-index: 100;
+        height: 2px;
+        background: #fd364d;
+        transition: all .3s;
+        border-radius: 1px; }
+      .mycard_page_root .nav_top .item.active {
+        color: #fd364d; }
+        .mycard_page_root .nav_top .item.active:after {
+          width: 100%; }
+  .mycard_page_root .other_com_root {
+    background: #f8f8f8;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100vh; }
+    .mycard_page_root .other_com_root .item {
+      background: #fff;
+      margin-bottom: 0.3rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+      .mycard_page_root .other_com_root .item .top {
+        height: 0.96rem;
+        padding: 0 0.2rem;
+        border-bottom: 1px solid #dbdbdb;
+        width: 100%; }
+        .mycard_page_root .other_com_root .item .top .img {
+          width: 0.74rem;
+          height: 0.74rem;
+          margin-right: 0.5rem; }
+          .mycard_page_root .other_com_root .item .top .img img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; }
+        .mycard_page_root .other_com_root .item .top .title {
+          padding-top: 0.07rem; }
+          .mycard_page_root .other_com_root .item .top .title span {
+            color: #fd364d;
+            font-size: 0.28rem;
+            margin-right: 0.4rem; }
+          .mycard_page_root .other_com_root .item .top .title p {
+            font-size: 0.26rem;
+            color: #b5b5b5; }
+      .mycard_page_root .other_com_root .item .con2 {
+        padding: 0 0.2rem;
+        height: 2.6rem;
+        width: 100%; }
+        .mycard_page_root .other_com_root .item .con2 .img {
+          width: 1.6rem;
+          height: 1.6rem;
+          display: block;
+          position: relative; }
+          .mycard_page_root .other_com_root .item .con2 .img img {
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            left: 0; }
+        .mycard_page_root .other_com_root .item .con2 .text {
+          padding: 0 0.26rem;
+          position: relative;
+          top: -.15rem; }
+        .mycard_page_root .other_com_root .item .con2 .title {
+          font-size: 0.32rem; }
+        .mycard_page_root .other_com_root .item .con2 .desc {
+          margin-top: 0.2rem;
+          font-size: 0.28rem;
+          color: #959595; }
+  .mycard_page_root .my_com_root {
+    background: #f8f8f8;
+    height: 100%;
+    -webkit-overflow-scrolling: touch; }
+    .mycard_page_root .my_com_root .item {
+      background: #fff;
+      margin-bottom: 0.3rem;
+      box-shadow: 0 4px 2px rgba(0, 0, 0, 0.01); }
+    .mycard_page_root .my_com_root .con2 {
+      margin: 0 .2rem;
+      height: 2.68rem;
+      border-bottom: 1px dotted #dbdbdb; }
+      .mycard_page_root .my_com_root .con2 .img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.3rem;
+        position: relative; }
+        .mycard_page_root .my_com_root .con2 .img img {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          display: block;
+          width: 100%;
+          left: 0; }
+      .mycard_page_root .my_com_root .con2 .desc {
+        padding-top: 0.28rem;
+        align-self: flex-start; }
+        .mycard_page_root .my_com_root .con2 .desc h4 {
+          font-size: 0.34rem;
+          color: #434343;
+          font-weight: normal; }
+        .mycard_page_root .my_com_root .con2 .desc p {
+          color: #959595;
+          margin-top: 0.25rem;
+          font-size: 0.24rem; }
+    .mycard_page_root .my_com_root .bottom {
+      padding: 0 .2rem;
+      height: 0.76rem;
+      font-size: 0.28rem; }
+      .mycard_page_root .my_com_root .bottom img {
+        width: 0.46rem; }

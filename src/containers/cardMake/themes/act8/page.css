@@ -1,0 +1,42 @@
+.template8_page1_theme {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-weight: bold; }
+  .template8_page1_theme .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+    .template8_page1_theme .bg img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .template8_page1_theme .who {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    z-index: 1000;
+    color: #313131;
+    font-size: 0.28rem; }
+  .template8_page1_theme .what {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    z-index: 1000;
+    color: #313131;
+    font-size: 0.28rem;
+    text-indent: 2em; }
+  .template8_page1_theme .where {
+    position: absolute;
+    text-align: right;
+    top: 45%;
+    left: 15%;
+    width: 70%;
+    z-index: 1000;
+    color: #313131;
+    font-size: 0.28rem; }

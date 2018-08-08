@@ -1,0 +1,35 @@
+.person_page_root {
+  background: #e7e7e7;
+  height: 100vh; }
+  .person_page_root .desc {
+    height: 2.9rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("./assets/bg.png") no-repeat;
+    background-size: 100% 100%; }
+    .person_page_root .desc img {
+      width: 1.7rem;
+      height: 1.7rem;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      border: 2px solid #fff; }
+    .person_page_root .desc span {
+      color: #fff;
+      margin-top: 0.2rem;
+      font-size: 0.24rem; }
+  .person_page_root .item {
+    background: #fff;
+    margin: 0.14rem 0;
+    height: 1.1rem;
+    padding: 0 0.26rem 0 0.36rem;
+    color: #434343;
+    font-size: 0.3rem; }
+    .person_page_root .item .icon {
+      width: 0.46rem;
+      margin-right: 0.42rem; }
+    .person_page_root .item .aro {
+      align-content: flex-end;
+      width: 0.16rem; }

@@ -1,1 +1,1 @@
-PUBLIC_URL = 'http://qn.kiis.cn/cardv3/'
+### react16 +redux+immutabel+async component 的贺卡制作平台
